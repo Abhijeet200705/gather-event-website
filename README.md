@@ -1,56 +1,90 @@
-# Gather — Event discovery & registration
+# Gather — Find your people, find your plans
 
-A responsive event discovery website built with semantic HTML5, CSS3, and vanilla JavaScript. Browse a curated selection of local events, search by title or venue, filter by category, save favorites, and register for an event.
+**Gather** is an event discovery and registration website I made for my web-design assignment. The idea is to make it easier to find something fun to do, whether that means going to a live music night, sharing a meal, visiting an art studio, or getting outside.
 
-## Features
+The site is built with HTML, CSS, and JavaScript. You can browse events, narrow them down by category or search, read more about an event, and save a spot using the registration form. It also adapts to smaller screens, so the main features work on phones as well as computers.
 
-- Responsive layouts for mobile, tablet, and desktop
-- Event cards with dates, categories, venues, descriptions, and imagery
-- Search across event names, categories, venues, and descriptions
-- Category filters with accessible active states
-- Event detail dialogs and direct registration
-- Form validation for name, email, optional phone number, and event selection
-- Registration confirmation and browser-local registration storage
-- Save-event buttons backed by local storage
-- Persistent light/dark theme toggle
-- Countdown to the next upcoming event
-- Reduced-motion support and keyboard shortcut (`/`) to focus event search
+## Links
 
-## Project structure
+- **Live website:** https://abhijeet200705.github.io/gather-event-website/
+- **GitHub repository:** https://github.com/Abhijeet200705/gather-event-website
+
+## What you can do on the site
+
+- Browse nine sample events, including music, food and drink, arts and culture, and outdoor activities.
+- Search by event name, category, venue, or a word in the event description.
+- Select a category to show only events of that type. Choose **All events** to clear the category filter.
+- Select **Details** on an event card to see its full description, date, and venue.
+- Save or unsave events by selecting the heart on a card.
+- Register by entering a name and email address, choosing an event, and optionally adding a phone number.
+- Switch between light and dark themes. The website remembers the selected theme in that browser.
+- See a countdown to the next event on the homepage.
+
+The `/` key is also a shortcut for focusing the event search box. Press it when you are not typing in another field.
+
+## Registration and saved data
+
+The registration form checks that a name has at least two characters and that the email address is valid. A phone number is optional; if provided, it must have a valid format. The form shows an error next to an invalid field and only displays the confirmation after all required information has been accepted.
+
+This project is a front-end demonstration, not a connected booking service. Successful registrations, saved events, and the theme preference are kept in the browser's local storage on the device used to submit the form. They are **not sent to a server**, and will not automatically appear on another device. Avoid entering sensitive personal information.
+
+## How the project is organized
 
 ```text
-gather/
-├── index.html
+gather-event-website/
+├── index.html       # Page content, navigation, event area, and dialogs
 ├── css/
-│   └── style.css
+│   └── style.css    # Layout, colors, responsive styles, and animations
 ├── js/
-│   └── app.js
-└── README.md
+│   └── app.js       # Sample event data, search, filters, forms, and storage
+├── README.md        # Project information and setup instructions
+└── .gitignore       # Files Git should ignore
 ```
 
-## Run locally
+### A little more about the code
 
-No build step, framework, or package installation is required.
+- **`index.html`** provides the page structure and accessible labels. Event cards are filled in by JavaScript, and the event details and registration forms open in dialogs.
+- **`css/style.css`** contains the visual design, including the responsive layouts, reusable buttons, event cards, and light and dark color palettes. It also respects the device's reduced-motion preference.
+- **`js/app.js`** contains the sample event list and the behavior behind event search, category filters, saved events, the countdown, theme switching, and registration validation.
 
-1. Download or clone this repository.
-2. Open `index.html` in a browser, or serve the project folder with a local static server.
-3. Use the event cards to view event details and register.
+The event photos are loaded from Unsplash, and the page uses Google Fonts when an internet connection is available. Replace these URLs with your own assets if you want to make the site independent of those services.
 
-Registrations, saved events, and the chosen theme are stored in the browser's local storage on the current device. This demo does not send data to a server.
+## Run it on your computer
 
-## Customize
+There is no build step, framework, or dependency installation.
 
-- Edit the `events` array in `js/app.js` to add or change event information.
-- Update the CSS custom properties at the top of `css/style.css` to change the colors and theme.
-- Event photos are loaded from Unsplash; replace the image URLs with your own images if desired.
+1. Download the project from GitHub using **Code → Download ZIP**, then extract it. Or clone it from a terminal:
 
-## Deploy
+   ```bash
+   git clone https://github.com/Abhijeet200705/gather-event-website.git
+   ```
 
-This is a static website. To deploy with GitHub Pages:
+2. Open the project folder and open `index.html` in a browser.
+3. Try the search, category buttons, event details, theme toggle, and registration form.
 
-1. Push the project to a GitHub repository.
-2. In the repository, open **Settings → Pages**.
-3. Select **Deploy from a branch**, choose your main branch and the root folder, then save.
-4. Wait for the deployment to finish and copy the website URL shown in Pages settings.
+If you are working in VS Code, you can also open the folder there and use a local preview extension. A simple static server is optional; the project does not need a server or build command.
 
-You can also import the repository into Netlify or Vercel. Use the project root as the site directory; no build command is needed.
+## Update the sample events or design
+
+To change the sample events, edit the `events` list near the beginning of `js/app.js`. Each event has an ID, title, category, date, venue, image, short description, and longer description. Keep the date and its display label in sync when changing an event.
+
+To adjust the colors, edit the CSS custom properties at the top of `css/style.css`. The event card layout, typography, and screen-size rules are in that stylesheet too.
+
+## Publish with GitHub Pages
+
+The live site is hosted with GitHub Pages from the `main` branch and the repository root:
+
+1. Open the repository on GitHub and select **Settings → Pages**.
+2. Under **Build and deployment**, choose **Deploy from a branch**.
+3. Select the `main` branch and the `/ (root)` folder, then save.
+4. Wait for the deployment to finish. GitHub Pages displays the published URL on the Pages settings screen.
+
+For changes made after the initial upload, save the files and push the update to GitHub:
+
+```bash
+git add .
+git commit -m "Update project documentation"
+git push
+```
+
+GitHub Pages will publish the updated site after the push. You do not need to run a build command.
