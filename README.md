@@ -63,28 +63,3 @@ There is no build step, framework, or dependency installation.
 3. Try the search, category buttons, event details, theme toggle, and registration form.
 
 If you are working in VS Code, you can also open the folder there and use a local preview extension. A simple static server is optional; the project does not need a server or build command.
-
-## Update the sample events or design
-
-To change the sample events, edit the `events` list near the beginning of `js/app.js`. Each event has an ID, title, category, date, venue, image, short description, and longer description. Keep the date and its display label in sync when changing an event.
-
-To adjust the colors, edit the CSS custom properties at the top of `css/style.css`. The event card layout, typography, and screen-size rules are in that stylesheet too.
-
-## Publish with GitHub Pages
-
-The live site is hosted with GitHub Pages from the `main` branch and the repository root:
-
-1. Open the repository on GitHub and select **Settings → Pages**.
-2. Under **Build and deployment**, choose **Deploy from a branch**.
-3. Select the `main` branch and the `/ (root)` folder, then save.
-4. Wait for the deployment to finish. GitHub Pages displays the published URL on the Pages settings screen.
-
-For changes made after the initial upload, save the files and push the update to GitHub:
-
-```bash
-git add .
-git commit -m "Update project documentation"
-git push
-```
-
-GitHub Pages will publish the updated site after the push. You do not need to run a build command.
