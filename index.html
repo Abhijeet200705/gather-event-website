@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Find your next favorite experience with Gather — a thoughtfully curated guide to events worth showing up for."
+    />
+    <meta name="theme-color" content="#f8f7f4" />
+    <title>Gather — Find your people, find your plans</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/app.js" defer></script>
+  </head>
+  <body>
+    <svg class="icon-library" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+      <symbol id="icon-arrow" viewBox="0 0 24 24">
+        <path d="M5 12h14M13 5l7 7-7 7" />
+      </symbol>
+      <symbol id="icon-search" viewBox="0 0 24 24">
+        <circle cx="10.8" cy="10.8" r="6.8" />
+        <path d="m16 16 4.5 4.5" />
+      </symbol>
+      <symbol id="icon-pin" viewBox="0 0 24 24">
+        <path d="M20 10c0 5-8 12-8 12S4 15 4 10a8 8 0 1 1 16 0Z" />
+        <circle cx="12" cy="10" r="2.5" />
+      </symbol>
+      <symbol id="icon-spark" viewBox="0 0 24 24">
+        <path d="m12 2 1.8 7.2L21 11l-7.2 1.8L12 20l-1.8-7.2L3 11l7.2-1.8L12 2Z" />
+        <path d="m19 15 .8 2.2L22 18l-2.2.8L19 21l-.8-2.2L16 18l2.2-.8L19 15Z" />
+      </symbol>
+      <symbol id="icon-moon" viewBox="0 0 24 24">
+        <path d="M20.5 14.3A8.5 8.5 0 0 1 9.7 3.5 8.5 8.5 0 1 0 20.5 14.3Z" />
+      </symbol>
+      <symbol id="icon-sun" viewBox="0 0 24 24">
+        <circle cx="12" cy="12" r="4" />
+        <path d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42" />
+      </symbol>
+      <symbol id="icon-close" viewBox="0 0 24 24">
+        <path d="m18 6-12 12M6 6l12 12" />
+      </symbol>
+      <symbol id="icon-calendar" viewBox="0 0 24 24">
+        <rect x="3" y="5" width="18" height="16" rx="2" />
+        <path d="M16 3v4M8 3v4M3 10h18" />
+      </symbol>
+    </svg>
+
+    <header class="site-header">
+      <nav class="nav-shell container" aria-label="Main navigation">
+        <a class="brand" href="#" aria-label="Gather home">
+          <span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span><span></span></span>
+          gather<span class="brand-period">.</span>
+        </a>
+        <div class="nav-links">
+          <a class="nav-link" href="#events">Explore events</a>
+          <a class="nav-link" href="#about">Our story</a>
+        </div>
+        <div class="nav-actions">
+          <button class="icon-button theme-toggle" type="button" aria-label="Switch to dark theme">
+            <svg class="icon theme-icon" aria-hidden="true"><use href="#icon-moon"></use></svg>
+          </button>
+          <a class="button button-dark nav-cta" href="#events">Find your event <svg class="icon" aria-hidden="true"><use href="#icon-arrow"></use></svg></a>
+          <button class="menu-toggle icon-button" type="button" aria-label="Open navigation menu" aria-expanded="false">
+            <span></span><span></span>
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero container" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="eyebrow-dot"></span> GOOD THINGS HAPPEN WHEN WE GATHER</p>
+          <h1 id="hero-title">Find your people.<br />Find your <span>plans.</span></h1>
+          <p class="hero-description">The little moments, big nights, and everything-in-between worth showing up for.</p>
+          <a class="button button-dark hero-button" href="#events">Explore what's on <svg class="icon" aria-hidden="true"><use href="#icon-arrow"></use></svg></a>
+          <div class="social-proof">
+            <div class="avatar-stack" aria-hidden="true">
+              <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&amp;fit=crop&amp;w=72&amp;q=80" alt="" />
+              <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&amp;fit=crop&amp;w=72&amp;q=80" alt="" />
+              <img src="https://images.unsplash.com/photo-1531123897727-8f129e1688ce?auto=format&amp;fit=crop&amp;w=72&amp;q=80" alt="" />
+              <span>+</span>
+            </div>
+            <p><strong>2,400+</strong> people found their thing</p>
+          </div>
+        </div>
+        <div class="hero-art">
+          <div class="hero-image-wrap">
+            <img
+              class="hero-image"
+              src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&amp;fit=crop&amp;w=1100&amp;q=85"
+              alt="Friends enjoying a lively outdoor music festival"
+            />
+            <div class="hero-image-shade"></div>
+            <div class="hero-image-caption">
+              <span class="live-dot"></span>
+              <span>MAKING MEMORIES, TOGETHER</span>
+            </div>
+          </div>
+          <div class="floating-note note-top"><span class="note-emoji">✳</span><span>Less scrolling.<br /><strong>More living.</strong></span></div>
+          <div class="floating-note note-bottom">
+            <span class="countdown-icon"><svg class="icon" aria-hidden="true"><use href="#icon-calendar"></use></svg></span>
+            <span class="countdown-copy"><span>NEXT UP IN</span><strong id="countdown">—</strong></span>
+          </div>
+          <div class="hero-sticker" aria-hidden="true">GO<br />OUT<br /><span>!</span></div>
+        </div>
+      </section>
+
+      <section class="events-section" id="events" aria-labelledby="events-title">
+        <div class="container">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow section-eyebrow"><span class="eyebrow-dot"></span> YOUR NEXT GOOD STORY</p>
+              <h2 id="events-title">A little something <span>for everyone.</span></h2>
+            </div>
+            <p class="section-intro">Curated gatherings, local favorites, and new things to try. Your calendar called.</p>
+          </div>
+
+          <div class="event-controls">
+            <div class="category-list" role="group" aria-label="Filter events by category">
+              <button class="category-chip is-active" type="button" data-category="All" aria-pressed="true">All events <span class="category-count" id="event-count">00</span></button>
+              <button class="category-chip" type="button" data-category="Music" aria-pressed="false">♫ <span>Music</span></button>
+              <button class="category-chip" type="button" data-category="Food & Drink" aria-pressed="false">♧ <span>Food &amp; drink</span></button>
+              <button class="category-chip" type="button" data-category="Arts & Culture" aria-pressed="false">✳ <span>Arts &amp; culture</span></button>
+              <button class="category-chip" type="button" data-category="Outdoors" aria-pressed="false">↗ <span>Outdoors</span></button>
+            </div>
+            <label class="search-box">
+              <svg class="icon" aria-hidden="true"><use href="#icon-search"></use></svg>
+              <span class="visually-hidden">Search events</span>
+              <input id="event-search" type="search" placeholder="Find your kind of fun..." autocomplete="off" />
+              <kbd>/</kbd>
+            </label>
+          </div>
+          <p class="results-label" id="results-label" aria-live="polite"></p>
+          <div class="event-grid" id="event-grid"></div>
+          <div class="empty-state" id="empty-state" hidden>
+            <span aria-hidden="true">✳</span>
+            <h3>No plans found (yet).</h3>
+            <p>Try another search or category. Your next favorite is out there.</p>
+            <button class="button button-outline reset-filters" type="button">Show me everything</button>
+          </div>
+          <div class="events-footer">
+            <span>GOOD PLANS. GOOD PEOPLE. GOOD TIMES.</span>
+            <span>MORE MEMORIES, LESS MAYBE <span aria-hidden="true">↗</span></span>
+          </div>
+        </div>
+      </section>
+
+      <section class="about-section container" id="about">
+        <div class="about-mark" aria-hidden="true"><span>g</span><i>✳</i></div>
+        <div class="about-copy">
+          <p class="eyebrow"><span class="eyebrow-dot"></span> A NOTE FROM US</p>
+          <h2>Life happens <span>out there.</span></h2>
+          <p>We think the best stories start with “you had to be there.” Gather makes it easier to find the people, places, and plans that turn an ordinary day into a really good one.</p>
+        </div>
+        <a class="button button-outline about-link" href="#events">Make a plan <svg class="icon" aria-hidden="true"><use href="#icon-arrow"></use></svg></a>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <a class="brand footer-brand" href="#" aria-label="Gather home">
+          <span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span><span></span></span>
+          gather<span class="brand-period">.</span>
+        </a>
+        <p>Made for the moments that matter. <span aria-hidden="true">♡</span></p>
+        <a href="#events">Find your next thing <span aria-hidden="true">↗</span></a>
+      </div>
+    </footer>
+
+    <dialog class="event-dialog" id="event-dialog" aria-labelledby="dialog-title">
+      <button class="dialog-close icon-button" type="button" aria-label="Close event details"><svg class="icon" aria-hidden="true"><use href="#icon-close"></use></svg></button>
+      <div id="event-dialog-content"></div>
+    </dialog>
+
+    <dialog class="register-dialog" id="register-dialog" aria-labelledby="register-title">
+      <button class="dialog-close icon-button" type="button" aria-label="Close registration form"><svg class="icon" aria-hidden="true"><use href="#icon-close"></use></svg></button>
+      <div class="register-heading">
+        <p class="eyebrow"><span class="eyebrow-dot"></span> YOUR GOOD THING STARTS HERE</p>
+        <h2 id="register-title">Save your <span>spot.</span></h2>
+        <p>Fill in your details and we'll see you there.</p>
+      </div>
+      <form class="register-form" id="register-form" novalidate>
+        <label for="register-event">Your event</label>
+        <select id="register-event" name="event" required></select>
+        <div class="form-row">
+          <div class="form-field">
+            <label for="register-name">Your name</label>
+            <input id="register-name" name="name" type="text" placeholder="Jamie Parker" autocomplete="name" required minlength="2" maxlength="80" />
+            <span class="field-error" id="name-error"></span>
+          </div>
+          <div class="form-field">
+            <label for="register-email">Email address</label>
+            <input id="register-email" name="email" type="email" placeholder="jamie@example.com" autocomplete="email" required maxlength="254" />
+            <span class="field-error" id="email-error"></span>
+          </div>
+        </div>
+        <label for="register-phone">Phone number <span class="optional-label">OPTIONAL</span></label>
+        <input id="register-phone" name="phone" type="tel" placeholder="+1 (555) 000-0000" autocomplete="tel" inputmode="tel" />
+        <span class="field-error" id="phone-error"></span>
+        <button class="button button-dark submit-button" type="submit">Count me in <svg class="icon" aria-hidden="true"><use href="#icon-arrow"></use></svg></button>
+        <p class="form-privacy">Your details stay with you. We only use them for this registration.</p>
+      </form>
+      <div class="confirmation-state" id="confirmation-state" hidden aria-live="polite">
+        <div class="confirmation-mark">✓</div>
+        <p class="eyebrow"><span class="eyebrow-dot"></span> IT'S A PLAN</p>
+        <h3>You're on the list<span>.</span></h3>
+        <p id="confirmation-message"></p>
+        <button class="button button-outline confirmation-close" type="button">Lovely, thanks!</button>
+      </div>
+    </dialog>
+  </body>
+</html>
